@@ -1,7 +1,8 @@
 import { Gallery } from "@/components/layout/Gallery";
 import type { PhotoGallery } from "@/types";
+import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
   
 export const GalleryPage = () => {
   const { id } = useParams();
@@ -19,6 +20,7 @@ export const GalleryPage = () => {
 
   return (
     <>
+    <BackButton/>
       {gallery && (
         <Gallery
           title={gallery.title}
@@ -29,3 +31,17 @@ export const GalleryPage = () => {
     </>
   );
 };
+
+function BackButton() {
+  const navigate = useNavigate();
+
+  return (
+    <button
+      onClick={() => navigate('/')}
+      className="flex items-center text-sm font-medium text-blue-600 hover:underline"
+    >
+      <ArrowLeft className="mr-1 h-4 w-4" />
+      Back
+    </button>
+  );
+}
