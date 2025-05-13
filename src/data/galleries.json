@@ -1,0 +1,28 @@
+[
+    {
+      "id": "sikkim",
+      "title": "Sikkim",
+      "coverPhoto": "/src/assets/sikkim/sikkim1.JPEG",
+      "photos": [
+        {
+          "path": "/src/assets/sikkim/sikkim1.JPEG"
+        },
+        {
+          "path": "/src/assets/sikkim/sikkim2.JPEG"
+        },
+        {
+          "path": "/src/assets/sikkim/sikkim3.JPEG"
+        }
+      ]
+    },
+    {
+        "id": "nagaland",
+        "title": "Nagaland",
+        "coverPhoto": "/src/assets/nagaland/nagaland1.JPEG",
+        "photos": [
+          {
+            "path": "/src/assets/nagaland/nagaland1.JPEG"
+          }
+        ]
+      }
+  ]

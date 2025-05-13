@@ -1,10 +1,11 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import type { Photo } from "@/types";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface GalleryProps {
   title: string;
-  description: string;
+  description?: string;
   images: Photo[];
 }
 
@@ -95,20 +96,26 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
             key={idx}
             className="relative min-w-[200px] max-w-full flex-shrink-0 rounded-lg group"
           >
-            <AspectRatio ratio={9 / 16}>
-              <div className="relative w-full h-full overflow-hidden">
-                <img
-                  src={image.path}
-                  alt={`Gallery image ${idx + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+            <Link to={`gallery/${image.id}`}>
+              <AspectRatio ratio={9 / 16}>
+                <div className="relative w-full h-full overflow-hidden">
+                  <img
+                    src={new URL(image.path, import.meta.url).href}
+                    alt={`Gallery image ${idx + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
 
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent text-white text-left p-4">
-                  {image.title && <h3 className="text-lg font-semibold">{image.title}</h3>}
-                  {image.caption && <p className="text-xs font-extralight">{image.caption}</p>}
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent text-white text-left p-4">
+                    {image.title && (
+                      <h3 className="text-lg font-semibold">{image.title}</h3>
+                    )}
+                    {image.caption && (
+                      <p className="text-xs font-extralight">{image.caption}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </AspectRatio>
+              </AspectRatio>
+            </Link>
           </div>
         ))}
       </div>
