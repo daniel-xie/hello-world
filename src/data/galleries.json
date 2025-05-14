@@ -1,52 +1,52 @@
 [
-    {
-      "id": "sikkim",
-      "title": "Sikkim",
-      "coverPhoto": "/src/assets/sikkim/sikkim1.JPEG",
-      "photos": [
-        {
-          "path": "/src/assets/sikkim/sikkim1.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim2.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim4.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim5.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim6.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim7.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim8.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim9.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim10.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim11.JPEG"
-        },
-        {
-          "path": "/src/assets/sikkim/sikkim12.JPEG"
-        }
-      ]
-    },
-    {
-        "id": "nagaland",
-        "title": "Nagaland",
-        "coverPhoto": "/src/assets/nagaland/nagaland1.JPEG",
-        "photos": [
-          {
-            "path": "/src/assets/nagaland/nagaland1.JPEG"
-          }
-        ]
+  {
+    "id": "sikkim",
+    "title": "Sikkim",
+    "coverPhoto": "images/sikkim/sikkim1.JPEG",
+    "photos": [
+      {
+        "path": "images/sikkim/sikkim1.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim2.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim4.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim5.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim6.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim7.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim8.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim9.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim10.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim11.JPEG"
+      },
+      {
+        "path": "images/sikkim/sikkim12.JPEG"
       }
-  ]
+    ]
+  },
+  {
+    "id": "nagaland",
+    "title": "Nagaland",
+    "coverPhoto": "images/nagaland/nagaland1.JPEG",
+    "photos": [
+      {
+        "path": "images/nagaland/nagaland1.JPEG"
+      }
+    ]
+  }
+]

@@ -100,7 +100,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
               <AspectRatio ratio={9 / 16}>
                 <div className="relative w-full h-full overflow-hidden">
                   <img
-                    src={new URL(image.path, import.meta.url).href}
+                    src={`${import.meta.env.BASE_URL}${image.path}`}
                     alt={`Gallery image ${idx + 1}`}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
