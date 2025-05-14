@@ -2,6 +2,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import type { Photo } from "@/types";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { ConditionalWrapper } from "../util/ConditionalWrapper";
 
 interface GalleryProps {
   title: string;
@@ -96,7 +97,10 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
             key={idx}
             className="relative min-w-[200px] max-w-full flex-shrink-0 rounded-lg group"
           >
-            <Link to={`gallery/${image.id}`}>
+            <ConditionalWrapper
+            condition={!!image.link}
+            wrapper={children => <Link to={image.link!}>{children}</Link>}
+            >
               <AspectRatio ratio={9 / 16}>
                 <div className="relative w-full h-full overflow-hidden">
                   <img
@@ -115,7 +119,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
                   </div>
                 </div>
               </AspectRatio>
-            </Link>
+            </ConditionalWrapper>
           </div>
         ))}
       </div>

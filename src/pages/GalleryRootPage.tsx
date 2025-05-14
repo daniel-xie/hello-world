@@ -7,12 +7,14 @@ const photos: Photo[] = [
       id: "sikkim",
       title: "Sikkim",
       caption: "Dingggggggggg",
+      link: 'gallery/sikkim',
     },
     {
       path: `images/nagaland/nagaland1.JPEG`,
       id: "nagaland",
       title: "Nagaland",
       caption: "Two heads are better than one",
+      link: 'gallery/nagaland',
     },
   ];
 

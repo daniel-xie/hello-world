@@ -3,6 +3,7 @@ export interface Photo {
     id: string;
     title?: string;
     caption?: string;
+    link?: string;
   }
 
   export interface PhotoGallery {
