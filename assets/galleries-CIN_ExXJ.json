@@ -4,7 +4,6 @@
     "name": "India",
     "coverPhoto": {
       "path": "images/hindustan/IMG_6678.JPEG",
-      "id": "sikkim",
       "title": "India",
       "link": "region/india"
     },
@@ -256,7 +255,6 @@
     "name": "China",
     "coverPhoto": {
       "path": "images/gansu/IMG_7376.JPEG",
-      "id": "china",
       "title": "China",
       "link": "region/china"
     },
@@ -272,6 +270,57 @@
           "link": "gallery/sichuan"
         },
         "photos": [{ "path": "images/sichuan/IMG_8884.JPEG" }]
+      }
+    ]
+  },
+  {
+    "id": "central-asia",
+    "name": "Central Asia",
+    "coverPhoto": {
+      "path": "images/kyrgyzstan/IMG_4716.JPEG",
+      "title": "Central Asia",
+      "link": "region/central-asia"
+    },
+    "galleries": [
+      {
+        "id": "kyrgyzstan",
+        "title": "Kyrgyzstan",
+        "caption": "🐎🐎🐎",
+        "coverPhoto": {
+          "path": "images/kyrgyzstan/IMG_4716.JPEG",
+          "title": "Kyrgyzstan",
+          "caption": "🐎🐎🐎",
+          "link": "gallery/kyrgyzstan"
+        },
+        "photos": [
+          { "path": "images/kyrgyzstan/IMG_4716.JPEG" },
+          { "path": "images/kyrgyzstan/IMG_3215.JPEG" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "south-east-asia",
+    "name": "South East Asia",
+    "coverPhoto": {
+      "path": "images/java/IMG_6318.JPEG",
+      "title": "South East Asia",
+      "link": "region/south-east-asia"
+    },
+    "galleries": [
+      {
+        "id": "java",
+        "title": "Java",
+        "caption": "Island of Volcanoes",
+        "coverPhoto": {
+          "path": "images/java/IMG_6318.JPEG",
+          "title": "Java",
+          "caption": "Island of Volcanoes",
+          "link": "gallery/java"
+        },
+        "photos": [
+          { "path": "images/java/IMG_6318.JPEG" }
+        ]
       }
     ]
   }
