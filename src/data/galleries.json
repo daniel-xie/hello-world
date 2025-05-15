@@ -393,7 +393,6 @@
           { "path": "images/sichuan/IMG_0356.JPEG" },
           { "path": "images/sichuan/IMG_0369.JPEG" },
           { "path": "images/sichuan/IMG_0376.JPEG" },
-          { "path": "images/sichuan/IMG_0424.JPEG" },
           { "path": "images/sichuan/IMG_0805.JPEG" },
           { "path": "images/sichuan/IMG_0937.JPEG" },
           { "path": "images/sichuan/IMG_1140.JPEG" },
@@ -1269,35 +1268,6 @@
     ]
   },
   {
-    "id": "middle-east",
-    "name": "Middle East",
-    "coverPhoto": {
-      "path": "images/qatar/IMG_7959.JPEG",
-      "title": "Middle East",
-      "link": "region/middle-east"
-    },
-    "galleries": [
-      {
-        "id": "qatar",
-        "title": "Qatar",
-        "caption": "⚪️",
-        "coverPhoto": {
-          "path": "images/qatar/IMG_7959.JPEG",
-          "title": "Qatar",
-          "caption": "⚪️",
-          "link": "gallery/qatar"
-        },
-        "photos": [
-          { "path": "images/qatar/IMG_7729.JPEG" },
-          { "path": "images/qatar/IMG_7763.JPEG" },
-          { "path": "images/qatar/IMG_7887.JPEG" },
-          { "path": "images/qatar/IMG_7959.JPEG" },
-          { "path": "images/qatar/IMG_7970.JPEG" }
-        ]
-      }
-    ]
-  },
-  {
     "id": "europe",
     "name": "Europe",
     "coverPhoto": {
@@ -1340,6 +1310,35 @@
           {"path": "images/iceland/IMG_7503.JPEG"},
           {"path": "images/iceland/IMG_7764.JPEG"},
           {"path": "images/iceland/IMG_8096.JPEG"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "middle-east",
+    "name": "Middle East",
+    "coverPhoto": {
+      "path": "images/qatar/IMG_7959.JPEG",
+      "title": "Middle East",
+      "link": "region/middle-east"
+    },
+    "galleries": [
+      {
+        "id": "qatar",
+        "title": "Qatar",
+        "caption": "⚪️",
+        "coverPhoto": {
+          "path": "images/qatar/IMG_7959.JPEG",
+          "title": "Qatar",
+          "caption": "⚪️",
+          "link": "gallery/qatar"
+        },
+        "photos": [
+          { "path": "images/qatar/IMG_7729.JPEG" },
+          { "path": "images/qatar/IMG_7763.JPEG" },
+          { "path": "images/qatar/IMG_7887.JPEG" },
+          { "path": "images/qatar/IMG_7959.JPEG" },
+          { "path": "images/qatar/IMG_7970.JPEG" }
         ]
       }
     ]
