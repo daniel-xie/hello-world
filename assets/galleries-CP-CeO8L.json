@@ -516,11 +516,11 @@
       },
       {
         "id": "xishuangbanna",
-        "title": "xishuangbanna",
+        "title": "Xishuangbanna",
         "caption": "🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾",
         "coverPhoto": {
           "path": "images/xishuangbanna/IMG_1725.JPEG",
-          "title": "xishuangbanna",
+          "title": "Xishuangbanna",
           "caption": "🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾🌾",
           "link": "gallery/xishuangbanna"
         },
@@ -738,6 +738,35 @@
           {"path": "public/images/uzbekistan/IMG_2674.JPEG"},
           {"path": "public/images/uzbekistan/IMG_2677.JPEG"},
           {"path": "public/images/uzbekistan/IMG_2770.JPEG"}
+        ]
+      },
+      {
+        "id": "kazakhstan",
+        "title": "Kazakhstan",
+        "caption": "Very nice!",
+        "coverPhoto": {
+          "path": "images/kazakhstan/IMG_5339.JPEG",
+          "title": "Kyrgyzstan",
+          "caption": "Very nice!",
+          "link": "gallery/Kazakhstan"
+        },
+        "photos": [
+          {"path": "images/kazakhstan/IMG_5339.JPEG"},
+          {"path": "images/kazakhstan/IMG_5357.JPEG"},
+          {"path": "images/kazakhstan/IMG_5468.JPEG"},
+          {"path": "images/kazakhstan/IMG_5493.JPEG"},
+          {"path": "images/kazakhstan/IMG_5521.JPEG"},
+          {"path": "images/kazakhstan/IMG_5540.JPEG"},
+          {"path": "images/kazakhstan/IMG_5568.JPEG"},
+          {"path": "images/kazakhstan/IMG_5582.JPEG"},
+          {"path": "images/kazakhstan/IMG_5600.JPEG"},
+          {"path": "images/kazakhstan/IMG_5726.JPEG"},
+          {"path": "images/kazakhstan/IMG_5734.JPEG"},
+          {"path": "images/kazakhstan/IMG_5805.JPEG"},
+          {"path": "images/kazakhstan/IMG_5864.JPEG"},
+          {"path": "images/kazakhstan/IMG_5957.JPEG"},
+          {"path": "images/kazakhstan/IMG_5982.JPEG"},
+          {"path": "images/kazakhstan/IMG_6039.JPEG"}
         ]
       }
     ]
