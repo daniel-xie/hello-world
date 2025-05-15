@@ -3,6 +3,7 @@ import type { Photo } from "@/types";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ConditionalWrapper } from "../util/ConditionalWrapper";
+import { ImageLightbox } from "./ImageLightbox";
 
 interface GalleryProps {
   title: string;
@@ -14,6 +15,14 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
   const galleryRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(false);
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentIndex(index);
+    setLightboxOpen(true);
+  };
 
   // Scroll functions
   const scrollLeft = () => {
@@ -98,14 +107,15 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
             className="relative min-w-[200px] max-w-full flex-shrink-0 rounded-lg group"
           >
             <ConditionalWrapper
-            condition={!!image.link}
-            wrapper={children => <Link to={image.link!}>{children}</Link>}
+              condition={!!image.link}
+              wrapper={(children) => <Link to={image.link!}>{children}</Link>}
             >
               <AspectRatio ratio={9 / 16}>
                 <div className="relative w-full h-full overflow-hidden">
                   <img
                     src={`${import.meta.env.BASE_URL}${image.path}`}
-                    alt={`Gallery image ${idx + 1}`}
+                    alt={image.title}
+                    onClick={() => openLightbox(idx)}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
 
@@ -123,6 +133,14 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
           </div>
         ))}
       </div>
+
+      <ImageLightbox
+        open={lightboxOpen}
+        onOpenChange={setLightboxOpen}
+        images={images}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
     </div>
   );
 };
