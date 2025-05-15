@@ -548,6 +548,53 @@
           { "path": "images/xishuangbanna/IMG_1992.JPEG" },
           { "path": "images/xishuangbanna/IMG_1994.JPEG" }
         ]
+      },
+      {
+        "id": "xian",
+        "title": "Xi'an",
+        "caption": "Capital of 13 Dynasties",
+        "coverPhoto": {
+          "path": "images/xian/IMG_0662.JPEG",
+          "title": "Xi'an",
+          "caption": "Capital of 13 Dynasties",
+          "link": "gallery/xian"
+        },
+        "photos": [
+          { "path": "images/xian/IMG_0568.JPEG" },
+          { "path": "images/xian/IMG_0592.JPEG" },
+          { "path": "images/xian/IMG_0604.JPEG" },
+          { "path": "images/xian/IMG_0642.JPEG" },
+          { "path": "images/xian/IMG_0662.JPEG" },
+          { "path": "images/xian/IMG_0667.JPEG" },
+          { "path": "images/xian/IMG_0686.JPEG" },
+          { "path": "images/xian/IMG_0843.JPEG" },
+          { "path": "images/xian/IMG_0849.JPEG" },
+          { "path": "images/xian/IMG_0850.JPEG" },
+          { "path": "images/xian/IMG_0868.JPEG" },
+          { "path": "images/xian/IMG_0894.JPEG" },
+          { "path": "images/xian/IMG_0909.JPEG" },
+          { "path": "images/xian/IMG_0912.JPEG" },
+          { "path": "images/xian/IMG_0921.JPEG" },
+          { "path": "images/xian/IMG_0961.JPEG" },
+          { "path": "images/xian/IMG_0992.JPEG" },
+          { "path": "images/xian/IMG_1019.JPEG" },
+          { "path": "images/xian/IMG_1080.JPEG" },
+          { "path": "images/xian/IMG_1084.JPEG" },
+          { "path": "images/xian/IMG_1089.JPEG" },
+          { "path": "images/xian/IMG_1129.JPEG" },
+          { "path": "images/xian/IMG_1134.JPEG" },
+          { "path": "images/xian/IMG_1169.JPEG" },
+          { "path": "images/xian/IMG_1226.JPEG" },
+          { "path": "images/xian/IMG_1264.JPEG" },
+          { "path": "images/xian/IMG_1326.JPEG" },
+          { "path": "images/xian/IMG_1329.JPEG" },
+          { "path": "images/xian/IMG_1347.JPEG" },
+          { "path": "images/xian/IMG_1410.JPEG" },
+          { "path": "images/xian/IMG_1425.JPEG" },
+          { "path": "images/xian/IMG_1507.JPEG" },
+          { "path": "images/xian/IMG_1581.JPEG" },
+          { "path": "images/xian/IMG_1628.JPEG" }
+        ]
       }
     ]
   },
