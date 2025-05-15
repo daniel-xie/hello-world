@@ -3,6 +3,7 @@ import "./App.css";
 import { GalleryPage } from "./pages/GalleryPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GalleryRootPage } from "./pages/GalleryRootPage";
+import { GalleryRegionPage } from "./pages/GalleryRegionPage";
 
 function App() {
   return (
@@ -18,10 +19,8 @@ function App() {
               <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
                   <Route path="/" element={<GalleryRootPage />} />
-                  <Route
-                    path="/gallery/:id"
-                    element={<GalleryPage />}
-                  />
+                  <Route path="/region/:regionId" element={<GalleryRegionPage />} />
+                  <Route path="/region/:regionId/gallery/:galleryId" element={<GalleryPage />} />
                 </Routes>
               </BrowserRouter>
             </div>

@@ -20,6 +20,8 @@ export const ImageLightbox = ({
 }: ImageLightboxProps) => {
   const image = images[currentIndex];
 
+  if (image == null) return <></>;
+
   const prev = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
