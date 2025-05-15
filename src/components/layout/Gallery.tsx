@@ -108,7 +108,11 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
           >
             <ConditionalWrapper
               condition={!!image.link}
-              wrapper={(children) => <Link to={image.link!}>{children}</Link>}
+              wrapper={(children) => (
+                <Link to={image.link!} replace>
+                  {children}
+                </Link>
+              )}
             >
               <AspectRatio ratio={9 / 16}>
                 <div className="relative w-full h-full overflow-hidden">
