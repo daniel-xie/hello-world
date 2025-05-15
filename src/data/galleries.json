@@ -3,10 +3,9 @@
     "id": "india",
     "name": "India",
     "coverPhoto": {
-      "path": "images/sikkim/sikkim1.JPEG",
+      "path": "images/hindustan/IMG_6678.JPEG",
       "id": "sikkim",
       "title": "India",
-      "caption": "It's India!",
       "link": "region/india"
     },
     "galleries": [
@@ -256,10 +255,9 @@
     "id": "china",
     "name": "China",
     "coverPhoto": {
-      "path": "images/sichuan/IMG_8884.JPEG",
+      "path": "images/gansu/IMG_7376.JPEG",
       "id": "china",
       "title": "China",
-      "caption": "It's China!",
       "link": "region/china"
     },
     "galleries": [
