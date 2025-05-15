@@ -1214,6 +1214,57 @@
           {"path": "images/vietnam/IMG_9571.JPEG"},
           {"path": "images/vietnam/IMG_9592.JPEG"}
         ]
+      },
+      {
+        "id": "bangkok",
+        "title": "Bangkok",
+        "caption": "sà-wàt-dee khráp",
+        "coverPhoto": {
+          "path": "images/bangkok/IMG_4960.JPEG",
+          "title": "Bangkok",
+          "caption": "sà-wàt-dee khráp",
+          "link": "gallery/bangkok"
+        },
+        "photos": [
+          {"path": "images/bangkok/IMG_4960.JPEG"},
+          {"path": "images/bangkok/IMG_4974.JPEG"},
+          {"path": "images/bangkok/IMG_4976.JPEG"},
+          {"path": "images/bangkok/IMG_5023.JPEG"},
+          {"path": "images/bangkok/IMG_5040.JPEG"},
+          {"path": "images/bangkok/IMG_5075.JPEG"},
+          {"path": "images/bangkok/IMG_5105.JPEG"},
+          {"path": "images/bangkok/IMG_5127.JPEG"},
+          {"path": "images/bangkok/IMG_5141.JPEG"},
+          {"path": "images/bangkok/IMG_5152.JPEG"},
+          {"path": "images/bangkok/IMG_5162.JPEG"},
+          {"path": "images/bangkok/IMG_5241.JPEG"},
+          {"path": "images/bangkok/IMG_5260.JPEG"},
+          {"path": "images/bangkok/IMG_5270.JPEG"},
+          {"path": "images/bangkok/IMG_5287.JPEG"},
+          {"path": "images/bangkok/IMG_5296.JPEG"},
+          {"path": "images/bangkok/IMG_5342.JPEG"},
+          {"path": "images/bangkok/IMG_5357.JPEG"},
+          {"path": "images/bangkok/IMG_5364.JPEG"},
+          {"path": "images/bangkok/IMG_5370.JPEG"},
+          {"path": "images/bangkok/IMG_5427.JPEG"},
+          {"path": "images/bangkok/IMG_5458.JPEG"},
+          {"path": "images/bangkok/IMG_5459.JPEG"},
+          {"path": "images/bangkok/IMG_5469.JPEG"},
+          {"path": "images/bangkok/IMG_5472.JPEG"},
+          {"path": "images/bangkok/IMG_5477.JPEG"},
+          {"path": "images/bangkok/IMG_5478.JPEG"},
+          {"path": "images/bangkok/IMG_5480.JPEG"},
+          {"path": "images/bangkok/IMG_5482.JPEG"},
+          {"path": "images/bangkok/IMG_5490.JPEG"},
+          {"path": "images/bangkok/IMG_5492.JPEG"},
+          {"path": "images/bangkok/IMG_5495.JPEG"},
+          {"path": "images/bangkok/IMG_5497.JPEG"},
+          {"path": "images/bangkok/IMG_5507.JPEG"},
+          {"path": "images/bangkok/IMG_5513.JPEG"},
+          {"path": "images/bangkok/IMG_5515.JPEG"},
+          {"path": "images/bangkok/IMG_5543.JPEG"},
+          {"path": "images/bangkok/IMG_5550.JPEG"}
+        ]
       }
     ]
   },
