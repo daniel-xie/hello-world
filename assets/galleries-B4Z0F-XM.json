@@ -1296,5 +1296,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "coverPhoto": {
+      "path": "images/iceland/IMG_6650.JPEG",
+      "title": "Europe",
+      "link": "region/europe"
+    },
+    "galleries": [
+      {
+        "id": "iceland",
+        "title": "Iceland",
+        "caption": "Land of 🧊 and 🔥",
+        "coverPhoto": {
+          "path": "images/iceland/IMG_6650.JPEG",
+          "title": "Iceland",
+          "caption": "Land of 🧊 and 🔥",
+          "link": "gallery/iceland"
+        },
+        "photos": [
+          {"path": "images/iceland/IMG_6567.JPEG"},
+          {"path": "images/iceland/IMG_6632.JPEG"},
+          {"path": "images/iceland/IMG_6635.JPEG"},
+          {"path": "images/iceland/IMG_6637.JPEG"},
+          {"path": "images/iceland/IMG_6650.JPEG"},
+          {"path": "images/iceland/IMG_6664.JPEG"},
+          {"path": "images/iceland/IMG_6666.JPEG"},
+          {"path": "images/iceland/IMG_6818.JPEG"},
+          {"path": "images/iceland/IMG_6835.JPEG"},
+          {"path": "images/iceland/IMG_6871.JPEG"},
+          {"path": "images/iceland/IMG_6932.JPEG"},
+          {"path": "images/iceland/IMG_6935.JPEG"},
+          {"path": "images/iceland/IMG_6943.JPEG"},
+          {"path": "images/iceland/IMG_6979.JPEG"},
+          {"path": "images/iceland/IMG_6980.JPEG"},
+          {"path": "images/iceland/IMG_7032.JPEG"},
+          {"path": "images/iceland/IMG_7412.JPEG"},
+          {"path": "images/iceland/IMG_7415.JPEG"},
+          {"path": "images/iceland/IMG_7442.JPEG"},
+          {"path": "images/iceland/IMG_7443.JPEG"},
+          {"path": "images/iceland/IMG_7503.JPEG"},
+          {"path": "images/iceland/IMG_7764.JPEG"},
+          {"path": "images/iceland/IMG_8096.JPEG"}
+        ]
+      }
+    ]
   }
 ]
