@@ -1,6 +1,5 @@
 export interface Photo {
     path: string;
-    id: string;
     title?: string;
     caption?: string;
     link?: string;
