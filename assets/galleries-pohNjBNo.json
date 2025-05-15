@@ -746,9 +746,9 @@
         "caption": "Very nice!",
         "coverPhoto": {
           "path": "images/kazakhstan/IMG_5339.JPEG",
-          "title": "Kyrgyzstan",
+          "title": "Kazakhstan",
           "caption": "Very nice!",
-          "link": "gallery/Kazakhstan"
+          "link": "gallery/kazakhstan"
         },
         "photos": [
           {"path": "images/kazakhstan/IMG_5339.JPEG"},
