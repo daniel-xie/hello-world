@@ -1166,6 +1166,54 @@
           { "path": "images/laos/IMG_3120.JPEG" },
           { "path": "images/laos/IMG_3151.JPEG" }
         ]
+      },
+      {
+        "id": "vietnam",
+        "title": "Vietnam",
+        "caption": "Bánh mì, baby",
+        "coverPhoto": {
+          "path": "images/vietnam/IMG_8222.JPEG",
+          "title": "Vietnam",
+          "caption": "Bánh mì, baby",
+          "link": "gallery/vietnam"
+        },
+        "photos": [
+          {"path": "images/vietnam/IMG_1056.JPEG"},
+          {"path": "images/vietnam/IMG_1798.JPEG"},
+          {"path": "images/vietnam/IMG_2263.JPG"},
+          {"path": "images/vietnam/IMG_2266.jpg"},
+          {"path": "images/vietnam/IMG_3102.JPG"},
+          {"path": "images/vietnam/IMG_8012.JPEG"},
+          {"path": "images/vietnam/IMG_8052.JPEG"},
+          {"path": "images/vietnam/IMG_8129.JPEG"},
+          {"path": "images/vietnam/IMG_8153.JPEG"},
+          {"path": "images/vietnam/IMG_8163.JPEG"},
+          {"path": "images/vietnam/IMG_8212.JPEG"},
+          {"path": "images/vietnam/IMG_8222.JPEG"},
+          {"path": "images/vietnam/IMG_8229.JPEG"},
+          {"path": "images/vietnam/IMG_8244.JPEG"},
+          {"path": "images/vietnam/IMG_8288.JPEG"},
+          {"path": "images/vietnam/IMG_8308.JPEG"},
+          {"path": "images/vietnam/IMG_8377.JPEG"},
+          {"path": "images/vietnam/IMG_8535.JPEG"},
+          {"path": "images/vietnam/IMG_8563.JPEG"},
+          {"path": "images/vietnam/IMG_8584.JPEG"},
+          {"path": "images/vietnam/IMG_8639.JPEG"},
+          {"path": "images/vietnam/IMG_8706.JPEG"},
+          {"path": "images/vietnam/IMG_8733.JPEG"},
+          {"path": "images/vietnam/IMG_9189.JPEG"},
+          {"path": "images/vietnam/IMG_9195.JPEG"},
+          {"path": "images/vietnam/IMG_9203.JPEG"},
+          {"path": "images/vietnam/IMG_9259.JPEG"},
+          {"path": "images/vietnam/IMG_9361.JPEG"},
+          {"path": "images/vietnam/IMG_9362.JPEG"},
+          {"path": "images/vietnam/IMG_9365.JPEG"},
+          {"path": "images/vietnam/IMG_9374.JPEG"},
+          {"path": "images/vietnam/IMG_9521.JPEG"},
+          {"path": "images/vietnam/IMG_9527.JPEG"},
+          {"path": "images/vietnam/IMG_9571.JPEG"},
+          {"path": "images/vietnam/IMG_9592.JPEG"}
+        ]
       }
     ]
   },
