@@ -39,6 +39,8 @@ export const ImageLightbox = ({
     return () => window.removeEventListener("keydown", handleKey);
   }, [currentIndex]);
 
+  const hasMetadata = image.title || image.caption;
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-6xl p-0 overflow-hidden bg-white flex flex-col md:flex-row">
@@ -63,7 +65,7 @@ export const ImageLightbox = ({
         )}
 
         {/* Image */}
-        <div className="w-full md:w-2/3 bg-black flex items-center justify-center">
+        <div className={`w-full ${hasMetadata ? 'md:w-2/3' : ''} bg-black flex items-center justify-center`}>
           <img
             src={`${import.meta.env.BASE_URL}${image.path}`}
             alt={image.title}
@@ -72,10 +74,12 @@ export const ImageLightbox = ({
         </div>
 
         {/* Caption */}
-        <div className="w-full md:w-1/3 p-6 bg-white">
-          <h2 className="text-xl font-semibold mb-2">{image.title}</h2>
-          <p className="text-gray-600">{image.caption}</p>
-        </div>
+        {(image.title || image.caption) && (
+          <div className="w-full md:w-1/3 p-6 bg-white">
+            <h2 className="text-xl font-semibold mb-2">{image.title}</h2>
+            <p className="text-gray-600">{image.caption}</p>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   );
