@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
 const navLinks = [
-  { name: "📷", href: "/" },
-  { name: "🎵", href: "/sounds" },
+  { name: "📷", href: `${import.meta.env.BASE_URL}` },
+  { name: "🎵", href: `${import.meta.env.BASE_URL}sounds` },
 ];
 
 export function Navbar() {
