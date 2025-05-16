@@ -78,7 +78,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
             disabled={!canScrollLeft}
             className={`transform -translate-y-1/2 z-10 bg-transparent p-3 select-none ${
               canScrollLeft
-                ? " hover:bg-gray-50 hover:scale-105"
+                ? " hover:bg-gray-50/30 hover:scale-105"
                 : "opacity-40 cursor-not-allowed pointer-events-none"
             }`}
           >
@@ -89,7 +89,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
             disabled={!canScrollRight}
             className={`transform -translate-y-1/2 z-10 bg-transparent p-3 select-none ${
               canScrollRight
-                ? " hover:bg-gray-50 hover:scale-105"
+                ? " hover:bg-gray-50/30 hover:scale-105"
                 : "opacity-40 cursor-not-allowed pointer-events-none"
             }`}
           >

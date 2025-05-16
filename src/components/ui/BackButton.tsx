@@ -10,7 +10,7 @@ export const BackButton = ({ to }: BackButtonProps) => {
   return (
     <button
       onClick={() => navigate(to, {replace: true})}
-      className="flex items-center text-sm font-medium hover:underline hover:bg-gray-50 hover:scale-105 p-3"
+      className="flex items-center text-sm font-medium hover:underline hover:bg-gray-50/30 hover:scale-105 p-3"
     >
       <ArrowLeft className="mr-1" />
       Back
