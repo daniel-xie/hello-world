@@ -4,6 +4,7 @@ import { GalleryPage } from "./pages/GalleryPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GalleryRootPage } from "./pages/GalleryRootPage";
 import { GalleryRegionPage } from "./pages/GalleryRegionPage";
+import { AudioPage } from "./pages/AudioPage";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
                   <Route path="/" element={<GalleryRootPage />} />
                   <Route path="/region/:regionId" element={<GalleryRegionPage />} />
                   <Route path="/region/:regionId/gallery/:galleryId" element={<GalleryPage />} />
+
+                  <Route path="/sounds" element={<AudioPage />} />
                 </Routes>
               </BrowserRouter>
             </div>
