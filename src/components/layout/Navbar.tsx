@@ -50,14 +50,9 @@ export function Navbar() {
               </svg>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-64 p-6">
-            <div className="flex justify-between items-center mb-8">
+          <SheetContent side="right" className="w-64 p-6 bg-blue-50">
+            <div className="flex justify-between items-center mb-8 pt-12">
               <h2 className="text-lg font-bold">Menu</h2>
-              <SheetTrigger asChild>
-                <Button variant="ghost" className="p-2">
-                  <X className="w-6 h-6" />
-                </Button>
-              </SheetTrigger>
             </div>
             <nav className="flex flex-col space-y-4">
               {navLinks.map(({ name, href }) => (
