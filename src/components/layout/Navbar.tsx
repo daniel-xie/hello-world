@@ -1,6 +1,5 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
 
 const navLinks = [
   { name: "📷", href: `${import.meta.env.BASE_URL}` },
