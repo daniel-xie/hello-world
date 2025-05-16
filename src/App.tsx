@@ -5,14 +5,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GalleryRootPage } from "./pages/GalleryRootPage";
 import { GalleryRegionPage } from "./pages/GalleryRegionPage";
 import { AudioPage } from "./pages/AudioPage";
+import { Navbar } from "./components/layout/Navbar";
 
 function App() {
   return (
     <>
-      <nav className="flex items-center justify-center">
-        <h1>Hello Daniel</h1>
-      </nav>
-
+      <Navbar/>
       <main>
         <div className=" bg-gradient-to-tr from-teal-500 to-indigo-500">
           <div className="flex items-center justify-center min-h-screen">
