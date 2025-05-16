@@ -1,8 +1,8 @@
 import { Gallery } from "@/components/layout/Gallery";
+import { BackButton } from "@/components/ui/BackButton";
 import type { Photo, PhotoGalleryRegion } from "@/types";
-import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export const GalleryRegionPage = () => {
   const { regionId } = useParams();
@@ -25,7 +25,7 @@ export const GalleryRegionPage = () => {
 
   return (
     <>
-      <BackButton />
+      <BackButton to={'/'} />
       {region && (
         <Gallery
           title={region?.name ?? "Somewhere"}
@@ -35,17 +35,3 @@ export const GalleryRegionPage = () => {
     </>
   );
 };
-
-function BackButton() {
-  const navigate = useNavigate();
-
-  return (
-    <button
-      onClick={() => navigate("/")}
-      className="flex items-center text-sm font-medium text-blue-600 hover:underline"
-    >
-      <ArrowLeft className="mr-1 h-4 w-4" />
-      Back
-    </button>
-  );
-}

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ConditionalWrapper } from "../util/ConditionalWrapper";
 import { ImageLightbox } from "./ImageLightbox";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface GalleryProps {
   title: string;
@@ -81,7 +82,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
                 : "opacity-40 cursor-not-allowed pointer-events-none"
             }`}
           >
-            ←
+            <ArrowLeft />
           </button>
           <button
             onClick={scrollRight}
@@ -92,7 +93,7 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
                 : "opacity-40 cursor-not-allowed pointer-events-none"
             }`}
           >
-            →
+            <ArrowRight />
           </button>
         </div>
       )}
