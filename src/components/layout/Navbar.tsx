@@ -12,7 +12,7 @@ export function Navbar() {
     <nav className="w-full border-b bg-blue-50 px-4 py-3 mx-auto">
       <div className="flex items-center justify-between max-w-7xl">
         {/* Site Logo/Name */}
-        <a href="/" className="text-xl font-bold">
+        <a href={`${import.meta.env.BASE_URL}`} className="text-xl font-bold">
           👋 Daniel Xie
         </a>
 
