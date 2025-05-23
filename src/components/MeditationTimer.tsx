@@ -79,7 +79,7 @@ export default function MeditationTimer() {
                 onValueChange={(val) => setDuration(val[0])}
               />
             </div>
-            <Button onClick={handleStartPause} className={"shadow-none"}>
+            <Button onClick={handleStartPause} className={"shadow-none hover:bg-gray-50/30 rounded-none"}>
               <Play className="w-4 h-4" />
             </Button>
           </motion.div>
@@ -90,9 +90,9 @@ export default function MeditationTimer() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="space-y-6 inset-0 flex flex-col justify-center"
+            className="space-y-6 inset-0 flex flex-col justify-center align-middle rounded-none"
           >
-            <h1 className="text-2xl font-bold">Time Remaining</h1>
+            <h2 className="text-2xl font-bold">🧘🏻</h2>
 
             <div className="flex items-center justify-center">
               <CircularProgress
@@ -102,7 +102,7 @@ export default function MeditationTimer() {
               </CircularProgress>
             </div>
 
-            <Button onClick={handleStartPause} className={"shadow-none"}>
+            <Button onClick={handleStartPause} className={"shadow-none hover:bg-gray-50/30 rounded-none w-auto"}>
               {isPaused ? (
                 <Play className="w-4 h-4" />
               ) : isRunning ? (

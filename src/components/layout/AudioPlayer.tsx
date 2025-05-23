@@ -95,9 +95,9 @@ export default function AudioPlayer({
             <div className="text-xs text-muted-foreground">{artist}</div>
             <div className="mt-2 flex items-center gap-2">
               <Button
-                variant="outline"
+                variant="ghost"
                 size="sm"
-                className="rounded-none"
+                className="rounded-none hover:bg-gray-50/30"
                 onClick={togglePlayback}
               >
                 {isPlaying ? (
@@ -139,7 +139,7 @@ export default function AudioPlayer({
             <Button
               variant="ghost"
               size="icon"
-              className="h-6 w-6 p-0 rounded-none"
+              className="h-6 w-6 p-0 rounded-none hover:bg-gray-50/30"
               onClick={toggleMute}
             >
               {isMuted || volume === 0 ? (
