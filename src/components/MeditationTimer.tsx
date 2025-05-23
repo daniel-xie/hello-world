@@ -1,34 +1,36 @@
-import { useState, useEffect, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Slider } from "@/components/ui/slider"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
+import { CircularProgress } from "./ui/CircularProgress";
+import { Pause, Play, RotateCcw } from "lucide-react";
 
 export default function MeditationTimer() {
-  const [duration, setDuration] = useState(10)
-  const [timeLeft, setTimeLeft] = useState(0)
-  const [isRunning, setIsRunning] = useState(false)
-  const [isPaused, setIsPaused] = useState(false)
-  const [hasStarted, setHasStarted] = useState(false)
-  const intervalRef = useRef<number | null>(null)
-  const bellRef = useRef<HTMLAudioElement | null>(null)
+  const [duration, setDuration] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
+  const intervalRef = useRef<number | null>(null);
+  const bellRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (isRunning && !isPaused && timeLeft > 0) {
       intervalRef.current = window.setInterval(() => {
-        setTimeLeft((prev) => prev - 1)
-      }, 1000)
+        setTimeLeft((prev) => prev - 1);
+      }, 1000);
     }
 
     if (timeLeft === 0 && isRunning) {
-      setIsRunning(false)
-      setIsPaused(false)
-      bellRef.current?.play()
+      setIsRunning(false);
+      setIsPaused(false);
+      bellRef.current?.play();
     }
 
     return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current)
-    }
-  }, [isRunning, isPaused, timeLeft])
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [isRunning, isPaused, timeLeft]);
 
   const handleStartPause = () => {
     if (!hasStarted) {
@@ -42,15 +44,15 @@ export default function MeditationTimer() {
     } else if (isPaused) {
       setIsPaused(false);
     } else {
-        setHasStarted(false);
+      setHasStarted(false);
     }
-  }
+  };
 
   const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60)
-    const s = seconds % 60
-    return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`
-  }
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  };
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 shadow-lg bg-gray-50/30 text-center space-y-6 relative overflow-hidden h-[300px]">
@@ -66,7 +68,9 @@ export default function MeditationTimer() {
           >
             <h1 className="text-2xl font-bold">Meditation Timer</h1>
             <div className="space-y-2">
-              <p className="text-muted-foreground">Duration: {duration} minutes</p>
+              <p className="text-muted-foreground">
+                Duration: {duration} minutes
+              </p>
               <Slider
                 min={1}
                 max={120}
@@ -75,7 +79,9 @@ export default function MeditationTimer() {
                 onValueChange={(val) => setDuration(val[0])}
               />
             </div>
-            <Button onClick={handleStartPause}>Start</Button>
+            <Button onClick={handleStartPause} className={"shadow-none"}>
+              <Play className="w-4 h-4" />
+            </Button>
           </motion.div>
         ) : (
           <motion.div
@@ -87,14 +93,32 @@ export default function MeditationTimer() {
             className="space-y-6 inset-0 flex flex-col justify-center"
           >
             <h1 className="text-2xl font-bold">Time Remaining</h1>
-            <div className="text-5xl font-mono text-primary">{formatTime(timeLeft)}</div>
-            <Button onClick={handleStartPause}>
-              {isPaused ? "Resume" : isRunning ? "Pause" : "Start Again"}
+
+            <div className="flex items-center justify-center">
+              <CircularProgress
+                progress={(duration * 60 - timeLeft) / (duration * 60)}
+              >
+                <div className="text-2xl font-mono">{formatTime(timeLeft)}</div>
+              </CircularProgress>
+            </div>
+
+            <Button onClick={handleStartPause} className={"shadow-none"}>
+              {isPaused ? (
+                <Play className="w-4 h-4" />
+              ) : isRunning ? (
+                <Pause className="w-4 h-4" />
+              ) : (
+                <RotateCcw className="w-4 h-4" />
+              )}
             </Button>
           </motion.div>
         )}
       </AnimatePresence>
-      <audio ref={bellRef} src={`${import.meta.env.BASE_URL}sounds/meditate/bell.mp3`} preload="auto" />
+      <audio
+        ref={bellRef}
+        src={`${import.meta.env.BASE_URL}sounds/meditate/bell.mp3`}
+        preload="auto"
+      />
     </div>
-  )
+  );
 }
