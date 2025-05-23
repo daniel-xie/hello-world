@@ -65,8 +65,8 @@ export const Gallery = ({ title, description, images }: GalleryProps) => {
 
   return (
     <div className="relative mx-auto max-w-4/5 px-4 py-12">
-      <header className="py-4">
-        <h2 className="text-xl font-bold">{title}</h2>
+      <header className="py-4 inline-block">
+        <h2 className="text-xl font-bold bg-gray-50/30">{title}</h2>
         <p className="text-sm font-light">{description}</p>
       </header>
 

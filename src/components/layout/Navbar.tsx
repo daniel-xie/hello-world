@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { name: "📷", href: `${import.meta.env.BASE_URL}` },
   { name: "🎵", href: `${import.meta.env.BASE_URL}sounds` },
+  { name: "🧘🏻", href: `${import.meta.env.BASE_URL}meditate` },
 ];
 
 export function Navbar() {
